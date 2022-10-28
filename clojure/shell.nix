@@ -1,6 +1,6 @@
 {pkgs ? import <nixpkgs> {}}:
 pkgs.mkShellNoCC {
-  buildInputs = with pkgs; [
+  packages = with pkgs; [
     clojure
     leiningen
     openjdk
