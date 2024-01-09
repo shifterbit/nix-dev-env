@@ -15,6 +15,7 @@
     devShells.x86_64-linux.elixir = pkgs.callPackage ./elixir/shell.nix {};
     devShells.x86_64-linux.clojure = pkgs.callPackage ./clojure/shell.nix {};
     devShells.x86_64-linux.go = pkgs.callPackage ./go/shell.nix {};
+    devShells.x86_64-linux.python = pkgs.callPackage ./python/shell.nix {};
 
     templates = {
       haskell = {
@@ -36,6 +37,10 @@
       go = {
         path = ./go;
         description = "Basic Go Devshell";
+      };
+      python = {
+        path = ./go;
+        description = "Basic Python Devshell";
       };
     };
   };
