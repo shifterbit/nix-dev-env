@@ -7,5 +7,5 @@ let
     # other python packages
   ];
 in pkgs.mkShell {
-    packages = [ (python3.withPackages python-packages)];
+    packages = [ (pkgs.python3.withPackages python-packages)];
   }
