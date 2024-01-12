@@ -39,7 +39,7 @@
         description = "Basic Go Devshell";
       };
       python = {
-        path = ./go;
+        path = ./python;
         description = "Basic Python Devshell";
       };
     };
