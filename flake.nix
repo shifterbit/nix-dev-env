@@ -12,6 +12,7 @@
   in {
     devShells.x86_64-linux.nodejs = pkgs.callPackage ./nodejs/shell.nix {};
     devShells.x86_64-linux.haskell = pkgs.callPackage ./haskell/shell.nix {};
+    devShells.x86_64-linux.haxe = pkgs.callPackage ./haskell/shell.nix {};
     devShells.x86_64-linux.elixir = pkgs.callPackage ./elixir/shell.nix {};
     devShells.x86_64-linux.clojure = pkgs.callPackage ./clojure/shell.nix {};
     devShells.x86_64-linux.go = pkgs.callPackage ./go/shell.nix {};
@@ -39,6 +40,10 @@
         description = "Basic Go Devshell";
       };
       python = {
+        path = ./python;
+        description = "Basic Python Devshell";
+      };
+      haxe = {
         path = ./python;
         description = "Basic Python Devshell";
       };

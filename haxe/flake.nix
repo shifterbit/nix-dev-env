@@ -1,5 +1,5 @@
 {
-  description = "Node.js Development Shell";
+  description = "Haxe Development Shell";
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
   };
